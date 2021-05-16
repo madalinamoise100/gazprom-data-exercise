@@ -15,7 +15,7 @@ import ntpath
 import datetime
 
 # vars
-db_string = 'postgres+psycopg2://test_user:test_user@localhost:5432/gazprom_data_exercise'
+db_string = 'postgresql+psycopg2://test_user:test_user@localhost:5432/gazprom_data_exercise'
 
 # return data about meters
 def get_meters():

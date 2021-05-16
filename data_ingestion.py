@@ -15,7 +15,7 @@ import ntpath
 import datetime
 
 # vars
-db_string = 'postgres+psycopg2://test_user:test_user@localhost:5432/gazprom_data_exercise'
+db_string = 'postgresql+psycopg2://test_user:test_user@localhost:5432/gazprom_data_exercise'
 path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sample_data/')
 files = glob.glob(path + "/*.SMRT")
 Base = declarative_base()
@@ -96,7 +96,7 @@ for filename in files:
         print(file_id)
 
         # drop header, footer, file_id column
-        df = df.iloc[1: , :]
+        df = df.iloc[1:, :]
         df = df.iloc[:-1]
         del df['file_id']
 
