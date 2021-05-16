@@ -13,7 +13,7 @@ numpy
 
 This script is used to perform the data ingestion.
 
-It creates the necessary tables:
+It creates the necessary tables using PostgreSQL and SQLAlchemy:
 
 1. a table that holds meter data about all the meters
 1. a table that holds file data about all the files
