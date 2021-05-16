@@ -90,7 +90,7 @@ for filename in files:
         # get id of source file
         file_id = df.loc[df.record_identifier == "HEADR", 'file_id'][0]
         # get file creation timestamp
-        # note that column names do not match because header has different format compared to other rows
+        # note that column names do not match because header has different format compared to the other rows
         creation_date = df.loc[df.record_identifier == "HEADR", 'time'][0]
         creation_time = df.loc[df.record_identifier == "HEADR", 'consumption'][0]
         print(file_id)
